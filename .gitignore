@@ -1,0 +1,52 @@
+# testing and validation
+/testing/
+/testing/**
+
+# internal planning
+**/agents/
+**/prompts/
+**/validation/
+*.agent.*
+changelog.md
+
+.env
+.env.*
+!.env.example
+!**/.env.example
+!**/.env.local.example
+
+# python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+
+# node / next
+node_modules/
+.next/
+.turbo/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+datasets/**
+!datasets/README.md
+reports/**
+!reports/README.md
+notebooks/**/*.ipynb
+models/
+*.pkl
+*.joblib
+
+# editors / os
+.vscode/
+.idea/
+.DS_Store
+
+# local settings (internal planning)
+.claude/settings.local.json

@@ -1,0 +1,26 @@
+[project]
+name = "itai-ml-core"
+version = "0.1.0"
+description = "ml library for ai-generated text detection: preprocessing, embeddings, training, evaluation, analytics, visualization"
+requires-python = ">=3.12"
+# kept lean on purpose. heavier deps (gensim, torch, transformers) are added to
+# the relevant module only when that module is actually implemented.
+dependencies = [
+    "numpy>=2.0",
+    "pandas>=2.2",
+    "scikit-learn>=1.5",
+]
+
+[project.optional-dependencies]
+dev = ["ruff>=0.7", "mypy>=1.13", "pytest>=8.3"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ml_core"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
