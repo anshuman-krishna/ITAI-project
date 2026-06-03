@@ -1,0 +1,7 @@
+embedding,classifier,accuracy_mean,accuracy_std,precision_weighted_mean,precision_weighted_std,recall_weighted_mean,recall_weighted_std,f1_weighted_mean,f1_weighted_std,precision_macro_mean,precision_macro_std,recall_macro_mean,recall_macro_std,f1_macro_mean,f1_macro_std,fit_ms,predict_ms
+bow,logistic_regression,0.9978,0.0018,0.9957,0.0035,0.9978,0.0018,0.9967,0.0027,0.6989,0.2458,0.7,0.2449,0.6995,0.2454,12.908,0.093
+bow,naive_bayes,0.9978,0.0018,0.9957,0.0035,0.9978,0.0018,0.9967,0.0027,0.6989,0.2458,0.7,0.2449,0.6995,0.2454,0.832,0.155
+bow,linear_svm,0.9978,0.0018,0.9957,0.0035,0.9978,0.0018,0.9967,0.0027,0.6989,0.2458,0.7,0.2449,0.6995,0.2454,6.407,0.09
+tfidf,logistic_regression,0.9978,0.0018,0.9957,0.0035,0.9978,0.0018,0.9967,0.0027,0.6989,0.2458,0.7,0.2449,0.6995,0.2454,7.555,0.088
+tfidf,naive_bayes,0.9978,0.0018,0.9957,0.0035,0.9978,0.0018,0.9967,0.0027,0.6989,0.2458,0.7,0.2449,0.6995,0.2454,0.801,0.138
+tfidf,linear_svm,0.9978,0.0018,0.9957,0.0035,0.9978,0.0018,0.9967,0.0027,0.6989,0.2458,0.7,0.2449,0.6995,0.2454,2.739,0.086

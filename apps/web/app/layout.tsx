@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 
+import { Nav } from "@/components/layout/nav";
 import { QueryProvider } from "@/providers/query-provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "ITAI — AI Text Detection",
-  description: "Detect AI-generated text. Research-grade, production-ready.",
+  description: "A platform for detecting AI-generated text: dataset analysis, benchmarking, and prediction.",
 };
 
 export default function RootLayout({
@@ -16,7 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <QueryProvider>{children}</QueryProvider>
+        <QueryProvider>
+          <Nav />
+          <main className="mx-auto max-w-5xl px-6 py-8">{children}</main>
+        </QueryProvider>
       </body>
     </html>
   );

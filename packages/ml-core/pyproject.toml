@@ -9,9 +9,16 @@ dependencies = [
     "numpy>=2.0",
     "pandas>=2.2",
     "scikit-learn>=1.5",
+    "scipy>=1.13",
+    "joblib>=1.4",
+    "matplotlib>=3.8",
 ]
 
 [project.optional-dependencies]
+# parquet ingestion and lemmatization pull extra weight, so they are opt-in. the default
+# pipeline runs without them, offline and deterministically.
+parquet = ["pyarrow>=16"]
+lemmatization = ["nltk>=3.9"]
 dev = ["ruff>=0.7", "mypy>=1.13", "pytest>=8.3"]
 
 [build-system]
@@ -24,3 +31,7 @@ packages = ["ml_core"]
 [tool.ruff]
 line-length = 100
 target-version = "py312"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
